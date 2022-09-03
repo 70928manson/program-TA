@@ -1,0 +1,79 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  .logo {
+    width: 23.88px;
+    height: 24px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-image: url("../images/logo2.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-sizing: content-box;
+    margin-bottom: 0;
+    cursor: pointer;
+
+    a {
+      display: block;
+      height: 100%;
+    }
+
+    @include lg {
+      width: 174.42px;
+      height: 42px;
+      background-image: url("../images/logo.svg");
+    }
+  }
+
+  // 清除多餘高度
+  a[class^="navbar"] {
+    line-height: 1;
+  }
+
+  // 清除多餘高度
+  .navbar-toggler {
+    border: 0;
+    font-size: 0;
+  }
+}
+
+.main {
+  padding-top: 4.5rem;
+
+  @include lg {
+    padding-top: 5.625rem;
+  }
+}
+
+.footer p {
+  font-size: 12px;
+  line-height: 14px;
+  font-family: $font-secondary;
+  color: #909090;
+
+  @include md {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.sub-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.block-py {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+
+  @include lg {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
