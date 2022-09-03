@@ -1,4 +1,4 @@
-//RWD系列
+//RWD系列 bs5斷點
 @mixin md {
   @media screen and (min-width: map-get($grid-breakpoints, "md")) {
     @content;

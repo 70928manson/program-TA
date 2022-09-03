@@ -1,0 +1,72 @@
+.banner {
+  background-image: url(../images/bg_home_mobile.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 336px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include md {
+    background-image: url(../images/bg_home.jpg);
+    height: 450px;
+  }
+
+  @include lg {
+    height: 100vh;
+  }
+
+  &-title {
+    border: 1px solid $white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    background-color: $dark;
+
+    .square{
+      width: 10px;
+      height: 10px;
+      background-color: $white;
+      position: absolute;
+    }
+
+    @include md {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 35px;
+
+      @include lg {
+        font-size: 36px;
+        line-height: 52px;
+      }
+
+      @include xl {
+        font-size: 48px;
+        line-height: 70px;
+      }
+
+      span {
+        display: block;
+        color: transparent;
+        background-image: linear-gradient(180deg, $secondary,$primary);
+        background-clip: text;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+
+      @include md {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+  }
+}
