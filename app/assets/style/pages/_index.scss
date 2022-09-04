@@ -70,3 +70,92 @@
     }
   }
 }
+
+.feature {
+  .material-icons {
+    font-size: 50px;
+    margin-bottom: 1.5rem;
+    color: transparent;
+    background-image: linear-gradient(180deg, $secondary,$primary);
+    background-clip: text;
+
+    @include lg {
+      background-image: none;
+      background-clip: none;
+      color: $white;
+    }
+  }
+
+  &-item {
+    border: 1px solid transparent;
+    border-radius: $border-radius;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: $dark;
+    cursor: default;
+    transition: 0.3s;
+
+    @include lg {
+      background-color: transparent;
+
+      &:hover {
+        border-color: $primary;
+        background-color: $dark;
+
+        .material-icons {
+          color: transparent;
+          background-image: linear-gradient(180deg, $secondary,$primary);
+          background-clip: text;
+        }
+      }
+    }
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.process {
+  &-list {
+    fieldset {
+      border-radius: $border-radius;
+      padding: 18px 3rem 3rem 3rem;
+      border: 1px solid $white;
+      height: 100%;
+    }
+
+    legend {
+      /*  蓋掉 BS 的 css reboot  */
+      float: none;
+      width: auto;
+
+      color: $primary;
+      font-size: 48px;
+      line-height: 56px;
+      font-weight: 700;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      font-family: $font-secondary;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 35px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+}
