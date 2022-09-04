@@ -16114,6 +16114,363 @@ body {
   }
 }
 
+.feature .material-icons {
+  font-size: 50px;
+  margin-bottom: 1.5rem;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#09ACF5), to(#62DB54));
+  background-image: -o-linear-gradient(top, #09ACF5, #62DB54);
+  background-image: linear-gradient(180deg, #09ACF5, #62DB54);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+@media screen and (min-width: 992px) {
+  .feature .material-icons {
+    background-image: none;
+    background-clip: none;
+    color: #fff;
+  }
+}
+
+.feature-item {
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #1C1C1C;
+  cursor: default;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 992px) {
+  .feature-item {
+    background-color: transparent;
+  }
+  .feature-item:hover {
+    border-color: #62DB54;
+    background-color: #1C1C1C;
+  }
+  .feature-item:hover .material-icons {
+    color: transparent;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#09ACF5), to(#62DB54));
+    background-image: -o-linear-gradient(top, #09ACF5, #62DB54);
+    background-image: linear-gradient(180deg, #09ACF5, #62DB54);
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+}
+
+.feature h3, .feature .h3 {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 1rem;
+}
+
+.feature p {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.process-list fieldset {
+  border-radius: 0.75rem;
+  padding: 18px 3rem 3rem 3rem;
+  border: 1px solid #fff;
+  height: 100%;
+}
+
+.process-list legend {
+  /*  蓋掉 BS 的 css reboot  */
+  float: none;
+  width: auto;
+  color: #62DB54;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  font-family: "Azeret Mono";
+}
+
+.process-list h3, .process-list .h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 35px;
+}
+
+.process-list p {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.item-tag li {
+  width: auto;
+}
+
+.item-tag a {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+  white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+}
+
+.item-tag a.active {
+  border-color: currentColor;
+  color: #62DB54;
+}
+
+@media screen and (min-width: 992px) {
+  .item-tag a {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .item-tag a:not(.active):hover {
+    color: #1C1C1C;
+    background-image: -webkit-gradient(linear, left top, right top, from(#09ACF5), to(#62DB54));
+    background-image: -o-linear-gradient(left, #09ACF5, #62DB54);
+    background-image: linear-gradient(90deg, #09ACF5, #62DB54);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .item-tag-lg a {
+    font-size: 18px;
+    padding: 1.5rem 2rem;
+  }
+}
+
+.swiper-free-mode > .swiper-wrapper {
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.course-card {
+  border-radius: 1.5rem;
+  background-color: #2D2D2D;
+  font-family: 'Noto Sans TC', serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.course-card-header, .course-card-footer {
+  text-align: center;
+}
+
+.course-card-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.course-card-speaker {
+  font-size: 16px;
+}
+
+.course-card-name {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.course-card-tag {
+  display: block;
+  color: #62DB54;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.course-card-content {
+  text-align: justify;
+}
+
+.course-card-hours {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.course-card-price {
+  display: inline-block;
+  font-size: 32px;
+  line-height: 37px;
+  vertical-align: middle;
+  font-family: "Azeret Mono";
+}
+
+@media screen and (min-width: 992px) {
+  .course-card-hover:hover {
+    border-color: #62DB54;
+  }
+}
+
+.course-card-normal {
+  height: 100%;
+  border: 2px solid transparent;
+}
+
+.course-card-normal .course-card-header,
+.course-card-normal .course-card-footer {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.course-card-normal .course-card-body {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: auto;
+}
+
+.course-card-normal .course-card-footer {
+  border-top: 1px solid #fff;
+}
+
+.course-card-normal .course-card-speaker {
+  margin-bottom: 0.5rem;
+}
+
+.course-card-normal .course-card-name {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .course-card-normal .course-card-name {
+    min-height: 59px;
+  }
+}
+
+.course-card-normal .course-card-link:hover {
+  color: #fff;
+}
+
+.course-card-normal .course-card-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem;
+}
+
+.course-card-fluid {
+  padding: 2rem 1.5rem;
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
+}
+
+@media screen and (min-width: 992px) {
+  .course-card-fluid {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 3rem;
+  }
+}
+
+.course-card-fluid .course-card-body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.course-card-fluid .course-card-name {
+  margin-bottom: 0.25rem;
+}
+
+@media screen and (min-width: 992px) {
+  .course-card-fluid .course-card-name {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+.course-card-fluid .course-card-content {
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .course-card-fluid .course-card-content {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .course-card-fluid .course-card-hours {
+    margin-right: 0;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.course-card-fluid .course-card-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.5rem;
+     -moz-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .course-card-fluid .course-card-link {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .course-card-fluid .course-card-link span {
+    width: 100%;
+  }
+}
+
+.course-card-fluid .course-card-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.5rem;
+     -moz-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+}
+
+.course-card-fluid .course-card-btn a {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .course-card-fluid .course-card-btn {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+}
+
 .border-gradient::after {
   content: '';
   position: fixed;
