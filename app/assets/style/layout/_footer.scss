@@ -1,4 +1,5 @@
-// 主要是要處理在輸入信用卡資訊頁面的畫面資料量過少，導致 footer 卡在一半
+//position定位 html footer, body利用margin空出高度
+// 網頁資料過少時，讓footer維持在底部
 html {
   min-height: 100%;
   position: relative;
